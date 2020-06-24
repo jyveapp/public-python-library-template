@@ -90,7 +90,7 @@ pre_commit:
 
 
 .PHONY: ci_setup
-ci_setup: package_managers dependencies git_tidy
+ci_setup: package_managers git_tidy dependencies
 
 
 # Sets up environment and installs dependencies
@@ -140,7 +140,7 @@ lint:
 # Lint commit messages and show changelog when on circleci
 check_changelog:
 ifdef CIRCLECI
-	git tidy-log origin/master
+	git tidy-log origin/master..
 endif
 	git tidy-lint origin/master
 

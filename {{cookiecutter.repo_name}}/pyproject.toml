@@ -24,6 +24,11 @@ classifiers = [
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3 :: Only",
 ]
+license = "BSD-3-Clause"
+readme = "README.rst"
+homepage = "https://github.com/jyveapp/{{cookiecutter.repo_name}}"
+repository = "https://github.com/jyveapp/{{cookiecutter.repo_name}}"
+documentation = "https://{{cookiecutter.repo_name}}.readthedocs.io"
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4"
