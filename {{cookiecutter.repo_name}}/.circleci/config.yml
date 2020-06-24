@@ -22,10 +22,8 @@ jobs:
             - /home/circleci/.local
             - /home/circleci/.cache/pypoetry/virtualenvs
             - /home/circleci/.cache/pipx
-{% endraw -%}
-            - /home/circleci/{{cookiecutter.repo_name}}/.tox
+            - /home/circleci/{% endraw -%}{{cookiecutter.repo_name}}{% raw -%}/.tox
 
-{% raw -%}
   lint:
     executor: python
     steps:
